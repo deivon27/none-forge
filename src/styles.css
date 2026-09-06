@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0e0c0a;
+  --color-surface: #1c1612;
+  --color-raised: #261e18;
+  --color-fg: #f4ecd8;
+  --color-muted: #a89070;
+  --color-accent: #d4b24a;
+  --color-accent-fg: #1a140c;
+  --color-ink: #2a2016;
+  --color-fill: #efe4c4;
+  --color-danger: #c45c3e;
+
+  --font-display: "Press Start 2P", ui-monospace, monospace;
+  --font-body: "VT323", ui-monospace, monospace;
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+
+  --shadow-pixel: 3px 3px 0 0 #2a2016;
+  --shadow-pixel-sm: 2px 2px 0 0 #2a2016;
+
+  --spacing-clue: 1.125rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-body);
+    letter-spacing: 0.02em;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .pixel-border {
+    border: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-pixel);
+  }
+
+  .pixel-border-muted {
+    border: 3px solid var(--color-muted);
+    box-shadow: var(--shadow-pixel-sm);
+  }
+
+  .scanlines {
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgb(0 0 0 / 0.14) 0px,
+      rgb(0 0 0 / 0.14) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

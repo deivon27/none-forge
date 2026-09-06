@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Nono Forge",
+      "hasCanvas": false,
+      "bodyTextLen": 84,
+      "bodyTextHash": "4d3a85fd52cd144d5da5971127ec4e7b90775cff1ae41d774c16e5f7924a2235",
+      "bodyTextPrefix": "PICROSS NONO FORGE 00:00 FILL MARK 0 1 1 4 1 7 4 1 1 1 0 1 3 5 3",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Nono Forge",
+      "hasCanvas": false,
+      "bodyTextLen": 88,
+      "bodyTextHash": "9a17ae1585637dbecab9c4d1564fc7d102c9fb959d2a318bef2d2dc04e97cff3",
+      "bodyTextPrefix": "PICROSS NONO FORGE 00:00 FILL MARK 4 3 1 6 7 6 3 1 4 1 1 1 1 3 1",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
